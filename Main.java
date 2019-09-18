@@ -1,12 +1,20 @@
 class Main{
-   public static void main(String args[]){
-     Pessoa a,b,c;
-     a=new Pessoa();
-     b=new Pessoa();
-     c=new Pessoa();
-     a.idade=22;
-     b.altura=1.78;
-     c.anoNascimento=1996;
-     System.out.println("Idade:"+a.idade+"\n"+"altura:"+b.altura+"\n"+"Ano de Nascimento:"+c.anoNascimento+"\n");
-}
+  public static void main(String[] args){
+    Quadro a= new Quadro();
+    Quadro b= new Quadro();
+    Quadro c= new Quadro();
+    a.altura=20;
+    a.largura=10;
+    b.altura= a.altura+a.largura;
+    c.largura= a.altura+b.largura;
+    c.altura= c.altura+5;
+    a.largura=3;
+    a.altura=0;
+    b.largura=2;
+ 
+    System.out.println("altura= "+a.altura+" largura= "+a.largura+"\n");
+    System.out.println("altura= "+b.altura+" largura= "+b.largura+"\n");
+    System.out.println("altura= "+c.altura+" largura= "+c.largura+"\n");
+
+  }
 }
